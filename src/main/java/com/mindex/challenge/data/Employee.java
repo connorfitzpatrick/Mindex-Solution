@@ -13,6 +13,15 @@ public class Employee {
     public Employee() {
     }
 
+    public Employee(String employeeId, String firstName, String lastName, String position, String department, List<Employee> directReports) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.position = position;
+        this.department = department;
+        this.directReports = directReports;
+    }
+
     public String getEmployeeId() {
         return employeeId;
     }
